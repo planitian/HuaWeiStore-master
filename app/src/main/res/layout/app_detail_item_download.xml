@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/detail_toolbar_height"
+              android:layout_gravity="bottom"
+              android:background="@color/backgound_fcfcfc"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_toolbar_height"
+        >
+
+        <FrameLayout
+            android:id="@+id/detail_download_button_container"
+            android:layout_width="200.0dp"
+            android:layout_height="30.0dp"
+            android:layout_centerInParent="true">
+
+            <com.yadong.huawei.module.widget.DownloadProgressButton
+                android:id="@+id/detail_download_button"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_download_share_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dp"
+            android:layout_marginRight="16.0dp"
+            android:layout_toLeftOf="@id/detail_download_button_container"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.yadong.huawei.module.widget.DetailShareButton
+                    android:layout_width="24.0dp"
+                    android:layout_height="24.0dp"
+                    android:background="@drawable/appdetail_share_btn_bg"
+                    android:gravity="center"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/detail_share_text"
+                    android:textColor="@color/half_black"
+                    android:textSize="9.0dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_download_comment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16.0dp"
+            android:layout_marginRight="8.0dp"
+            android:layout_toRightOf="@id/detail_download_button_container"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24.0dp"
+                    android:layout_height="24.0dp"
+                    android:background="@drawable/appdetail_publish_comment_btn_bg"
+                    android:gravity="center"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/detail_comment_text"
+                    android:textColor="@color/half_black"
+                    android:textSize="9.0dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+       >
+
+        <ImageView
+            android:id="@+id/no_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_no_wifi_disable"/>
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_wifi"
+            android:alpha="0.6"
+            android:gravity="center_horizontal"
+            android:padding="6dp"
+            android:text="加载失败,点击屏幕重新加载"
+            android:textColor="@color/black"
+            android:textSize="@dimen/res_textsize_13sp"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/setting"
+        style="@style/nodata_bluebuttonbottom"
+        android:layout_width="@dimen/alertDialog_width"
+        android:layout_height="@dimen/wifi_setting_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/wifi_setting_bottom"
+        android:layout_marginLeft="@dimen/wifi_setting_lef"
+        android:layout_marginRight="@dimen/wifi_setting_right"
+        android:visibility="gone"
+        android:text="@string/setting_network"
+        android:textAllCaps="true"/>
+
+</RelativeLayout>
